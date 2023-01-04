@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package ejemplos01;
-
+import java.util.Scanner;
 /**
  *
  * @author reroes
@@ -15,9 +15,11 @@ public class Ejemplo03 {
         // 
         int valor = obtenerSuma(10, 30); // se invoca al método 
                                          // obtenerSuma
-        System.out.printf("El valor de la suma es: %d\n", valor);
+        System.out.printf("El valor de la suma es: %d\n\n", valor);
         
         // System.out.printf("El valor de la suma es: %d\n", obtenerSuma(10, 30));
+        
+        System.out.printf("%s\n", obtenerSuma2());
     }
     
     
@@ -28,5 +30,16 @@ public class Ejemplo03 {
         // return a + b;
     }
     
+    public static int obtenerSuma2(){
+        int suma;
+        Scanner entrada = new Scanner(System.in);
+        System.out.println("Ingrese el primer valor");
+        int a = entrada.nextInt();
+        System.out.println("Ingrese el primer valor");
+        int b = entrada.nextInt();
+        suma = a + b;
+        return suma;
+        // return a + b;
+    }
     
 }
